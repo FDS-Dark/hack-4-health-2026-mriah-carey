@@ -1,0 +1,303 @@
+{
+  "simplified_main_ideas": [
+    {
+      "original_main_idea": "Patient Demographics and Exam Details",
+      "simplified_main_idea": "**Simplified Version:**\n\nBasic Patient Information and Exam Details",
+      "original_details": [
+        "PATIENT: JOHN SMITH",
+        "DOB: 5/5/1955",
+        "EXAM: MRI CERVICAL SPINE",
+        "DATE: 1/1/2011"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "PATIENT: JOHN SMITH",
+          "simplified_detail": "PATIENT: JOHN SMITH"
+        },
+        {
+          "original_detail": "DOB: 5/5/1955",
+          "simplified_detail": "Date of Birth: 5/5/1955"
+        },
+        {
+          "original_detail": "EXAM: MRI CERVICAL SPINE",
+          "simplified_detail": "**Test:** A special scan that uses strong magnets and radio waves to create detailed pictures of your neck bones."
+        },
+        {
+          "original_detail": "DATE: 1/1/2011",
+          "simplified_detail": "DATE: 1/1/2011"
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Clinical Indication for MRI",
+      "simplified_main_idea": "Reason for this special imaging test",
+      "original_details": [
+        "Left neck and shoulder pain for 2 months"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Left neck and shoulder pain for 2 months",
+          "simplified_detail": "Left neck and shoulder pain for 2 months"
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Overall Diagnosis: Multilevel Degenerative Disease and Facet Arthropathy",
+      "simplified_main_idea": "Main Finding: Changes affecting many areas due to wear and tear, along with problems in the small joints of your backbones.",
+      "original_details": [
+        "Most severe from C4-5 through C6-7"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Most severe from C4-5 through C6-7",
+          "simplified_detail": "Most severe from the area between the 4th and 5th neck bones through the area between the 6th and 7th neck bones."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Cervical Alignment Abnormality",
+      "simplified_main_idea": "The way your neck bones are lined up is not normal.",
+      "original_details": [
+        "Straightening of the normal cervical lordosis",
+        "May be positional or related to muscular spasm"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Straightening of the normal cervical lordosis",
+          "simplified_detail": "The natural inward curve of your neck has become straighter."
+        },
+        {
+          "original_detail": "May be positional or related to muscular spasm",
+          "simplified_detail": "May be related to your body's position or to muscle cramps."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "General Disc and Spondylosis Findings",
+      "simplified_main_idea": "Here is the simplified version of the medical text:\n\n**General things found about the spongy cushions between your back bones and the age-related wear and tear changes in your spine.**",
+      "original_details": [
+        "Moderate to severe disc space narrowing from C4-5 through C6-7",
+        "Prominent prevertebral spondylosis"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Moderate to severe disc space narrowing from C4-5 through C6-7",
+          "simplified_detail": "There is moderate to severe narrowing of the spaces between your neck bones, specifically between the 4th and 5th, the 5th and 6th, and the 6th and 7th neck bones."
+        },
+        {
+          "original_detail": "Prominent prevertebral spondylosis",
+          "simplified_detail": "Noticeable wear and tear changes in front of the backbone."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Spinal Cord and Cerebellar Tonsil Status",
+      "simplified_main_idea": "Here is the simplified version of your medical text:\n\nThe condition of the main nerve bundle running down your back and the lowest part of the brain that controls balance and movement.",
+      "original_details": [
+        "Spinal cord is normal in caliber and signal intensity",
+        "Cerebellar tonsils are normally located"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Spinal cord is normal in caliber and signal intensity",
+          "simplified_detail": "The main nerve cord in your back is normal in its size and how it shows up on the pictures."
+        },
+        {
+          "original_detail": "Cerebellar tonsils are normally located",
+          "simplified_detail": "The lowest parts of the brain that control balance and movement are found where they should be."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Bone Marrow Findings",
+      "simplified_main_idea": "What was seen in the spongy material inside your bones",
+      "original_details": [
+        "No destructive bony lesions",
+        "Low T1 signal intensity within the bone marrow surrounding the left C4-5 facet joint",
+        "Likely reactive to facet arthropathy"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "No destructive bony lesions",
+          "simplified_detail": "No abnormal areas on the bones that are causing damage."
+        },
+        {
+          "original_detail": "Low T1 signal intensity within the bone marrow surrounding the left C4-5 facet joint",
+          "simplified_detail": "A darker appearance on the MRI within the spongy material inside the bone around the small joint on the left side between the fourth and fifth neck bones."
+        },
+        {
+          "original_detail": "Likely reactive to facet arthropathy",
+          "simplified_detail": "Likely caused by wear and tear in the small joints in your back."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Findings at C3-4 Level",
+      "simplified_main_idea": "What was found at the third and fourth neck bones.",
+      "original_details": [
+        "Focal 1-2 mm central disc protrusion",
+        "Mild right uncovertebral joint hypertrophy",
+        "Deformity of the ventral thecal sac",
+        "Mild spinal canal stenosis",
+        "No significant neural foraminal narrowing"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Focal 1-2 mm central disc protrusion",
+          "simplified_detail": "In one specific spot, the gel-like cushion between your bones is pushing out in the middle by 1 to 2 millimeters."
+        },
+        {
+          "original_detail": "Mild right uncovertebral joint hypertrophy",
+          "simplified_detail": "Mild extra bone growth in the small joints on the right side of the neck bones."
+        },
+        {
+          "original_detail": "Deformity of the ventral thecal sac",
+          "simplified_detail": "Abnormal shape of the front part of the sac that holds the spinal cord and its fluid."
+        },
+        {
+          "original_detail": "Mild spinal canal stenosis",
+          "simplified_detail": "Mild narrowing of the space around the spinal cord"
+        },
+        {
+          "original_detail": "No significant neural foraminal narrowing",
+          "simplified_detail": "There is no important narrowing of the openings where the nerves pass through."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Findings at C4-5 Level",
+      "simplified_main_idea": "Findings at the area between the 4th and 5th neck bones.",
+      "original_details": [
+        "Diffuse disc osteophyte more prominent on the left",
+        "Left facet arthropathy",
+        "Flattening of the ventral thecal sac",
+        "Mild spinal canal stenosis",
+        "Moderate right neural foraminal narrowing",
+        "Moderate to severe left neural foraminal narrowing"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Diffuse disc osteophyte more prominent on the left",
+          "simplified_detail": "Widespread bone spurs growing from the cushions between your backbones, with these spurs being more noticeable on the left side."
+        },
+        {
+          "original_detail": "Left facet arthropathy",
+          "simplified_detail": "A problem with the small joint on the left side in the back of the spine."
+        },
+        {
+          "original_detail": "Flattening of the ventral thecal sac",
+          "simplified_detail": "There is some flattening of the front part of the protective sac around your spinal cord."
+        },
+        {
+          "original_detail": "Mild spinal canal stenosis",
+          "simplified_detail": "Mild narrowing of the space around the spinal cord."
+        },
+        {
+          "original_detail": "Moderate right neural foraminal narrowing",
+          "simplified_detail": "Moderate narrowing of the right nerve opening."
+        },
+        {
+          "original_detail": "Moderate to severe left neural foraminal narrowing",
+          "simplified_detail": "Moderate to severe narrowing of the openings on the left side where the nerves come out."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Findings at C5-6 Level",
+      "simplified_main_idea": "Findings at the area between the 5th and 6th bones in your neck.",
+      "original_details": [
+        "Diffuse disc osteophyte more prominent on the right",
+        "Mild bilateral facet joint hypertrophy",
+        "Flattening of the ventral thecal sac",
+        "Mild spinal canal stenosis",
+        "Moderate to severe right neural foraminal narrowing",
+        "Mild left neural foraminal narrowing"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Diffuse disc osteophyte more prominent on the right",
+          "simplified_detail": "Widespread extra bone growths on the soft cushions between your back bones, which are more noticeable on the right side."
+        },
+        {
+          "original_detail": "Mild bilateral facet joint hypertrophy",
+          "simplified_detail": "There is mild thickening or slight enlargement of the small joints that connect the bones in your spine, on both sides."
+        },
+        {
+          "original_detail": "Flattening of the ventral thecal sac",
+          "simplified_detail": "The front part of the protective sac that holds your spinal cord and nerves is flattened."
+        },
+        {
+          "original_detail": "Mild spinal canal stenosis",
+          "simplified_detail": "Mild narrowing of the space around the spinal cord."
+        },
+        {
+          "original_detail": "Moderate to severe right neural foraminal narrowing",
+          "simplified_detail": "Moderate to severe narrowing of the openings where the nerves come out of the spine on the right side."
+        },
+        {
+          "original_detail": "Mild left neural foraminal narrowing",
+          "simplified_detail": "Mild narrowing of the nerve opening on the left side."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Findings at C6-7 Level",
+      "simplified_main_idea": "Here is the simplified version of the medical text:\n\nWhat was found in the area between the 6th and 7th bones of the neck.",
+      "original_details": [
+        "Diffuse disc osteophyte",
+        "Flattening of the ventral thecal sac",
+        "Mild spinal canal stenosis",
+        "Moderate to severe bilateral neural foraminal narrowing"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "Diffuse disc osteophyte",
+          "simplified_detail": "Widespread bone spurs growing from the cushions between your bones."
+        },
+        {
+          "original_detail": "Flattening of the ventral thecal sac",
+          "simplified_detail": "The front part of the protective sac around the spinal cord and fluid is flattened."
+        },
+        {
+          "original_detail": "Mild spinal canal stenosis",
+          "simplified_detail": "Mild narrowing of the space around the spinal cord."
+        },
+        {
+          "original_detail": "Moderate to severe bilateral neural foraminal narrowing",
+          "simplified_detail": "Moderate to severe narrowing of the openings where the nerves come out on both sides."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Absence of Significant Findings at C2-3 and C7-T1",
+      "simplified_main_idea": "No important problems were found between the second and third bones in your neck, and no important problems were found between the seventh bone in your neck and the first bone in your upper back.",
+      "original_details": [
+        "C2-3: No disc osteophyte complex, spinal canal stenosis, or neural foraminal narrowing",
+        "C7-T1: No disc osteophyte complex, spinal canal stenosis, or neural foraminal narrowing"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "C2-3: No disc osteophyte complex, spinal canal stenosis, or neural foraminal narrowing",
+          "simplified_detail": "Between the second and third bones in your neck: There is no bulging disc combined with extra bone growths, no narrowing of the space around your spinal cord, and no narrowing of the openings where your nerves exit."
+        },
+        {
+          "original_detail": "C7-T1: No disc osteophyte complex, spinal canal stenosis, or neural foraminal narrowing",
+          "simplified_detail": "Between the 7th neck bone and the 1st upper back bone: No problems involving the cushion between the bones and extra bone growths, no narrowing of the space around the spinal cord, or narrowing of the openings where the nerves exit the spine."
+        }
+      ]
+    },
+    {
+      "original_main_idea": "Absence of Paraspinal Soft Tissue Mass",
+      "simplified_main_idea": "There is no lump or growth in the muscles, fat, and other soft parts next to the backbone (spine).",
+      "original_details": [
+        "No paraspinal soft tissue mass"
+      ],
+      "simplified_details": [
+        {
+          "original_detail": "No paraspinal soft tissue mass",
+          "simplified_detail": "No lump or growth in the muscles and fat next to your spine."
+        }
+      ]
+    }
+  ]
+}

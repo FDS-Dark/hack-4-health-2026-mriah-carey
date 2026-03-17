@@ -1,0 +1,1 @@
+# UMLS OpenSearch loading scripts

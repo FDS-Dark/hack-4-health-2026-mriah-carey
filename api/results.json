@@ -1,0 +1,121 @@
+{
+  "simplified_report": [
+    {
+      "original_chunk": "NAME:\nREF. PHYSICIAN:\nNational Diagnostic\nIMAGING\nDATE OF BIRTH:\nEXAM:\nCTA CHEST W W/O CONTRAST\nPATIENT NUMBER:\nSTUDY DATE:\nGENDER:\n1/4/2016\nM",
+      "simplified_chunk": "This report is about a special X-ray scan called a CTA chest. This scan looks at your chest. It was performed on January 4, 2016 (1/4/2016). The scan was done both with and without a special dye, called contrast, which helps parts of your body show up more clearly. The patient is male.",
+      "similarity": 0.8923805952072144,
+      "sources": null,
+      "needs_review": false,
+      "validation": {
+        "passed": true,
+        "results": [
+          {
+            "passed": true,
+            "validator_name": "empty_chunk_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "numeric_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "umls_grounding_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "contradiction_nli_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "recommendation_policy_validator",
+            "errors": []
+          }
+        ],
+        "iteration": 1,
+        "needs_review": false
+      }
+    },
+    {
+      "original_chunk": "SOB, dyspnea, R/O PE, ILD, possible occupational lung disease\nINDICATIONS: 49 year-old patient with shortness of breath. Possible PE. Possible occupational lung disease.\nPROCEDURE: Consecutive axial slices were obtained without and with intravenous contrast. Bolus thin slices\nwere performed through the pulmonary arteries.\nThe pulmonary trunk shows no evidence for thrombus or embolus. There is no evidence for a saddle embolus.\nThe right and left main pulmonary arteries appear unremarkable.\nThe first and second order pulmonary branches bilaterally do not show evidence for embolus.\nThe axillary regions show no adenopathy. The mediastinum and hilar regions show no masses or adenopathy.\nThe included upper abdomen shows splenic calcification which could indicate remote granulomatous disease.\nThere is some focal renal cortical thickening on the right where there may be prior scarring.\nThere is no evidence for pulmonary parenchymal interstitial lung disease. On image 2 series 4 in the left lower\nlung there is a 3 mm nodule. This could be followed with surveillance CT in 12 months if there is further\nconcern. There is also a small similar nodule on the same series image 49 on the left.\nThere are no infiltrates or effusions.\nThere is no acute bony abnormality seen.",
+      "simplified_chunk": "This report is for a 49-year-old patient who experiences shortness of breath. The doctors wanted to check for a possible blood clot in the lungs (PE), a specific lung condition called Interstitial Lung Disease (ILD), or a lung condition possibly related to their job.\n\nA special imaging test called a CT scan was performed. Pictures were taken first without and then with a special dye injected into a vein, called intravenous contrast. This dye helps blood vessels show up more clearly. Very thin pictures were specifically taken of the pulmonary arteries, which are the blood vessels that carry blood to the lungs.\n\nHere\u2019s what the CT scan showed:\n\n*   There were no signs of blood clots (thrombus or embolus) in the main blood vessel leading to the lungs (the pulmonary trunk), or in the main right and left pulmonary arteries. There was also no evidence of a large, specific type of blood clot called a saddle embolus. The smaller branches of the pulmonary arteries in both lungs also did not show any blood clots.\n*   There was no swelling of lymph nodes (adenopathy) in the armpit areas, or in the chest space between the lungs (mediastinum) and near the lung roots (hilar regions). No growths or masses were seen in these areas.\n*   Pictures of the upper abdomen showed some hardened spots on the spleen (splenic calcification). This could be a sign of a past infection or inflammation (granulomatous disease).\n*   There was some thickening on the outer part of the right kidney (focal renal cortical thickening), which might be due to previous scarring.\n*   There was no evidence of Interstitial Lung Disease (ILD), which is a specific condition affecting the lung tissue. Two small spots or nodules were seen in the left lung:\n    *   One nodule was 3 mm in size (seen on image 2, series 4, in the lower left lung).\n    *   Another similar small nodule was also seen on the same series, image 49, on the left.\n    *   These nodules might need a follow-up CT scan in 12 months if doctors are still concerned.\n*   There was no abnormal fluid or material in the lungs (infiltrates) or fluid around the lungs (effusions).\n*   There was no new or urgent problem with the bones (acute bony abnormality) seen.",
+      "similarity": 0.9597468376159668,
+      "sources": null,
+      "needs_review": false,
+      "validation": {
+        "passed": true,
+        "results": [
+          {
+            "passed": true,
+            "validator_name": "empty_chunk_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "numeric_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "umls_grounding_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "contradiction_nli_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "recommendation_policy_validator",
+            "errors": []
+          }
+        ],
+        "iteration": 2,
+        "needs_review": false
+      }
+    },
+    {
+      "original_chunk": "No evidence for pulmonary embolic disease.\nSome small lung nodules on the left could be followed at 12 months with a CT if there is sufficient\nconcern.Reference: Radiology, 2005 Nov;237(2):395-400.\nNo evidence for interstitial lung disease.\nD. H. Berns, M.D.\nMedical Director of NDI\nDB/DB\nElectronically Signed by and Verified\nDate Report Signed: 1/4/2016 3:09:15 PM\nCOMPLETING YOUR IMAGE\nNational Diagnostic Imaging, LLC, 25700 Science Park, Suite 180, Beachwood, OH 44122\n(800) 950-5257 or (216) 514-1199 Fax (216) 514-9911 or (800) 775-9752\nWWW.NDXIMAGING.COM",
+      "simplified_chunk": "This report shows that there is no sign of blood clots in your lungs, which doctors call pulmonary embolic disease. We did find some small spots, called lung nodules, in your left lung. If your doctor is concerned, these might need another check-up in 12 months using a special X-ray called a CT scan. There is no sign of interstitial lung disease.\n\nThis report was electronically signed and verified by D. H. Berns, M.D., the Medical Director of NDI, on 1/4/2016 at 3:09:15 PM. The findings also refer to information from Radiology, published in November 2005, specifically volume 237, issue 2, pages 395-400.\n\nThis report comes from National Diagnostic Imaging, LLC, located at 25700 Science Park, Suite 180, Beachwood, OH 44122. You can call them at (800) 950-5257 or (216) 514-1199, or send a fax to (216) 514-9911 or (800) 775-9752. Their website is WWW.NDXIMAGING.COM.",
+      "similarity": 0.9717395901679993,
+      "sources": null,
+      "needs_review": false,
+      "validation": {
+        "passed": true,
+        "results": [
+          {
+            "passed": true,
+            "validator_name": "empty_chunk_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "numeric_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "umls_grounding_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "contradiction_nli_validator",
+            "errors": []
+          },
+          {
+            "passed": true,
+            "validator_name": "recommendation_policy_validator",
+            "errors": []
+          }
+        ],
+        "iteration": 1,
+        "needs_review": false
+      }
+    }
+  ]
+}

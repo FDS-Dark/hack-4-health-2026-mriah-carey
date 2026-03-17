@@ -1,0 +1,696 @@
+---
+alwaysApply: true
+---
+## Golden Rules (Non-Negotiable)
+
+### DO
+- **Imports at TOP of file** — No inline imports, ever
+- **Config in dedicated files** — Use environment variables and config classes
+- **Keep it simple** — Write the minimal code that solves the problem
+- **Documentation explains WHY** — Not what the code does
+- **Every line is maintenance** — Code you write is code you maintain
+
+### DON'T
+- Raw SQL in application code (use stored procedures or an abstraction layer)
+- Business logic in UI components
+- Walls of text in documentation
+- Unnecessary error handling wrappers (don't try-catch everything)
+- Repeat business logic — follow the DRY principle
+- Over-engineer or add "future-proofing" that isn't needed
+
+---
+
+## Architecture Overview
+
+```mermaid
+flowchart TB
+    subgraph Frontend
+        Pages --> Components
+        Components --> Hooks
+        Hooks --> API
+        API --> Models_FE[Models]
+    end
+    
+    subgraph Backend
+        Router --> Service
+        Service --> Databridge
+        Databridge --> Database[(Database)]
+        Service --> Proxy[External APIs]
+    end
+    
+    API --> Router
+```
+
+### The Cardinal Rule
+> **Lower layers NEVER import from higher layers.**
+
+This creates a clean dependency flow and prevents circular imports.
+
+---
+
+## Backend Standards
+
+### Recommended Tech Stack
+| Purpose | Tool |
+|---------|------|
+| Framework | FastAPI |
+| Validation | Pydantic |
+| Database | SQLAlchemy Core |
+| Logging | Structlog |
+| Testing | pytest, pytest-asyncio |
+
+### Layer Responsibilities
+
+| Layer | Responsibility | Forbidden |
+|-------|----------------|--------------|
+| **Router** | Input validation, route to service, HTTP concerns | Business logic, SQL, excessive try-catch |
+| **Service** | Business logic, orchestration, domain exceptions | SQL execution, HTTP concerns |
+| **Databridge** | Data access, call stored procedures/queries | Business logic, validation |
+| **Proxy** | Wrap external APIs, handle retries/timeouts | Business logic |
+| **Models** | Data structure definitions | Logic of any kind |
+
+### Router Example
+```python
+from fastapi import APIRouter, Depends
+from src.models.user import UserRequest, User
+from src.services.user_service import UserService
+
+router = APIRouter(prefix="/users", tags=["users"])
+
+@router.post("/")
+async def create_user(
+    request: UserRequest,
+    service: UserService = Depends(get_user_service)
+) -> User:
+    # Router does: validate input (Pydantic), delegate to service
+    # Router does NOT: contain business logic, execute SQL
+    return await service.create_user(request)
+```
+
+### Service Example
+```python
+from src.databridge.user_databridge import UserDatabridge
+from src.models.user import User, UserRequest
+
+class UserService:
+    def __init__(self, databridge: UserDatabridge):
+        self.databridge = databridge
+    
+    async def create_user(self, request: UserRequest) -> User:
+        # Business logic belongs here
+        if self._email_already_exists(request.email):
+            raise DuplicateEmailError("Email already registered")
+        
+        # Delegate data operations to databridge
+        return await self.databridge.create_user(request)
+    
+    def _email_already_exists(self, email: str) -> bool:
+        # Business rule implementation
+        pass
+```
+
+### Databridge Example
+```python
+from src.databridge.base import BaseDatabridge
+from src.models.user import User, UserRequest
+
+class UserDatabridge(BaseDatabridge):
+    async def create_user(self, request: UserRequest) -> User:
+        # Data access ONLY - no business logic
+        query = text("SELECT * FROM create_user(:email, :name)")
+        result = await self.fetch_one(query, {
+            "email": request.email,
+            "name": request.name
+        })
+        return User(**result)
+```
+
+### Model Example
+```python
+from pydantic import BaseModel, Field
+from datetime import datetime
+
+class UserRequest(BaseModel):
+    """Request model for creating a user."""
+    email: str = Field(..., description="User email address")
+    name: str = Field(..., min_length=1, max_length=100)
+
+class User(BaseModel):
+    """Domain model for a user."""
+    id: int
+    email: str
+    name: str
+    created_at: datetime
+
+# Generic response types to reuse
+class ActionResponse(BaseModel):
+    success: bool
+    message: str
+
+class PaginatedResponse(BaseModel, Generic[T]):
+    skip: int
+    take: int
+    total: int
+    records: list[T]
+```
+
+---
+
+## Frontend Standards
+
+### Recommended Tech Stack
+| Purpose | Tool |
+|---------|------|
+| Framework | React |
+| Language | TypeScript (Strict mode) |
+| Styling | CSS Modules |
+| State | React Hooks, Context, or Redux (if needed) |
+
+### Layer Responsibilities
+
+| Layer | Responsibility | Forbidden |
+|-------|----------------|--------------|
+| **Models** | TypeScript interface definitions | Logic |
+| **API** | HTTP calls, authentication | Business logic |
+| **Hooks** | State management, API orchestration, loading/error | JSX/UI rendering |
+| **Components** | Pure UI rendering | API calls, business logic |
+| **Pages** | Route composition, layout | Heavy logic |
+
+### Import Order (Strict)
+```typescript
+// 1. External packages (React, libraries)
+import React, { useState, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+// 2. Internal modules (use path aliases like ~/ or @/)
+import { User } from '~/models';
+import { useUser } from '~/hooks';
+import { Button } from '~/components/common';
+
+// 3. Relative imports (same feature)
+import { UserCard } from './UserCard';
+
+// 4. Styles (always last)
+import styles from './MyComponent.module.css';
+```
+
+### Naming Conventions
+| Type | Convention | Example |
+|------|------------|---------|
+| Interfaces/Types | PascalCase | `UserProfile`, `ApiResponse` |
+| Variables/Functions | camelCase | `userData`, `fetchUser` |
+| Components | PascalCase | `UserCard`, `LoginForm` |
+| CSS Classes | camelCase | `styles.cardHeader` |
+| Event Handlers | `on{Action}` | `onClick`, `onSubmit` |
+| Boolean Props | `is{State}` or `has{Property}` | `isLoading`, `hasError` |
+
+### Model Example
+```typescript
+// src/models/user.ts
+
+export interface User {
+  id: number;
+  email: string;
+  name: string;
+  createdAt: string | null;  // Use | null, NOT Optional<>
+}
+
+export interface UserRequest {
+  email: string;
+  name: string;
+}
+
+// Use type[] NOT Array<type>
+export interface UserListResponse {
+  users: User[];
+  total: number;
+}
+```
+
+### API Layer Example
+```typescript
+// src/api/userApi.ts
+
+import { User, UserRequest } from '~/models';
+
+export async function createUser(
+  token: string,  // Auth token as FIRST parameter
+  request: UserRequest
+): Promise<User> {
+  // HTTP concerns only - no business logic
+  const response = await fetch('/api/users', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`,
+    },
+    body: JSON.stringify(request),
+  });
+  
+  if (!response.ok) {
+    throw new ApiError(response.status, await response.text());
+  }
+  
+  return response.json();
+}
+```
+
+### Hook Example
+```typescript
+// src/hooks/useUser.ts
+
+import { useState, useCallback } from 'react';
+import { useAuth } from '~/hooks/useAuth';
+import { createUser } from '~/api/userApi';
+import { User, UserRequest } from '~/models';
+
+export function useUser() {
+  const { getToken } = useAuth();
+  const [data, setData] = useState<User | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  
+  // Wrap handlers in useCallback for stable references
+  const create = useCallback(async (request: UserRequest) => {
+    setIsLoading(true);
+    setError(null);
+    
+    const token = await getToken();
+    const result = await createUser(token, request);
+    setData(result);
+    setIsLoading(false);
+  }, [getToken]);
+  
+  return { data, isLoading, error, create };
+}
+```
+
+### Component Example
+```typescript
+// src/components/UserCard/UserCard.tsx
+
+import styles from './UserCard.module.css';
+
+interface UserCardProps {
+  name: string;
+  email: string;
+  onEdit: () => void;
+  isActive: boolean;
+}
+
+// Named export - NO default exports
+export function UserCard({ name, email, onEdit, isActive }: UserCardProps) {
+  // PURE UI - No API calls, no business logic
+  return (
+    <div className={styles.root}>
+      <h3 className={styles.name}>{name}</h3>
+      <p className={styles.email}>{email}</p>
+      <span className={isActive ? styles.active : styles.inactive}>
+        {isActive ? 'Active' : 'Inactive'}
+      </span>
+      <button onClick={onEdit}>Edit</button>
+    </div>
+  );
+}
+```
+
+### Component Folder Structure
+```
+src/components/UserCard/
+├── index.ts              # Barrel export: export { UserCard } from './UserCard';
+├── UserCard.tsx          # Component (named export only)
+├── UserCard.module.css   # Styles
+└── UserCard.test.tsx     # Tests (or .stories.tsx for Storybook)
+```
+
+### CSS Modules Best Practices
+```css
+/* UserCard.module.css */
+
+/* Root element always named .root */
+.root {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Use CSS custom properties for theming */
+.name {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-lg);
+}
+
+/* camelCase for multi-word class names */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+```
+
+---
+
+## Database Standards
+
+### Key Principles
+1. **No raw SQL in application code** — Use stored procedures or a data access layer
+2. **Migrations are immutable** — Never modify executed migrations, create new ones
+3. **No business logic in SQL** — Database handles data operations only
+4. **Always declare security** — Explicit grants and permissions
+
+### Stored Procedure Naming Convention
+```
+{return_type}_{operation}_{schema}_{table}_{suffix}
+```
+
+**Examples:**
+- `bigint_insert_public_users_i` — Insert returning ID
+- `void_update_public_users_u` — Update with no return
+- `table_select_public_users_s` — Select returning rows
+
+### Stored Procedure Template
+```sql
+CREATE OR REPLACE FUNCTION schema.create_user(
+    p_email VARCHAR,
+    p_name VARCHAR
+)
+RETURNS TABLE(id BIGINT, email VARCHAR, name VARCHAR, created_at TIMESTAMP)
+LANGUAGE plpgsql
+SECURITY DEFINER
+AS $$
+BEGIN
+    -- Data operations only - NO business logic
+    RETURN QUERY
+    INSERT INTO users (email, name, created_at)
+    VALUES (p_email, p_name, NOW())
+    RETURNING id, email, name, created_at;
+END;
+$$;
+
+-- Always declare grants
+GRANT EXECUTE ON FUNCTION schema.create_user TO app_role;
+```
+
+### What Belongs Where
+
+| Location | Belongs | Does NOT Belong |
+|----------|---------|-----------------|
+| **Database** | Data storage, retrieval, constraints, indexes | Business rules, validation logic, formatting |
+| **Service Layer** | Business rules, validation, orchestration | SQL queries, data formatting for UI |
+| **Databridge** | Query execution, result mapping | Business logic, validation |
+
+---
+
+## Testing Standards
+
+> **Philosophy:** "Test every code path. 2 branches = 2 tests. State coverage over line coverage."
+
+### Test Types
+
+| Type | Purpose | Speed | Mocking |
+|------|---------|-------|---------|
+| **Unit** | Test isolated logic | Fast (<100ms) | Mock dependencies |
+| **Integration** | Test system interactions | Slower | Real database (Docker) |
+| **E2E** | Test user workflows | Slowest | Real everything |
+
+### Test File Location
+| Source File | Test File |
+|-------------|-----------|
+| `src/services/user_service.py` | `tests/unit/services/test_user_service.py` |
+| `src/hooks/useUser.ts` | `src/hooks/__tests__/useUser.test.ts` |
+| Feature integration | `tests/integration/test_user_flow.py` |
+
+### Test Naming Convention
+```
+test_{function}_{scenario}_{expected_outcome}
+```
+
+**Examples:**
+- `test_create_user_valid_input_returns_user_id`
+- `test_create_user_duplicate_email_raises_conflict_error`
+- `test_create_user_empty_name_raises_validation_error`
+
+### Backend Unit Test Template
+```python
+import pytest
+from unittest.mock import Mock, AsyncMock
+
+@pytest.mark.asyncio
+async def test_create_user_valid_input_returns_user():
+    # Arrange
+    mock_databridge = Mock()
+    mock_databridge.create_user = AsyncMock(
+        return_value=User(id=1, email="test@example.com", name="Test")
+    )
+    service = UserService(mock_databridge)
+    request = UserRequest(email="test@example.com", name="Test")
+    
+    # Act
+    result = await service.create_user(request)
+    
+    # Assert
+    assert result.id == 1
+    assert result.email == "test@example.com"
+    mock_databridge.create_user.assert_called_once_with(request)
+
+
+@pytest.mark.asyncio
+async def test_create_user_duplicate_email_raises_error():
+    # Arrange
+    mock_databridge = Mock()
+    mock_databridge.email_exists = AsyncMock(return_value=True)
+    service = UserService(mock_databridge)
+    
+    # Act & Assert
+    with pytest.raises(DuplicateEmailError):
+        await service.create_user(UserRequest(email="exists@example.com", name="Test"))
+```
+
+### Frontend Hook Test Template
+```typescript
+import { renderHook, waitFor, act } from '@testing-library/react';
+import { useUser } from '../useUser';
+import * as userApi from '~/api/userApi';
+
+jest.mock('~/api/userApi');
+
+describe('useUser', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('returns user data on successful create', async () => {
+    // Arrange
+    const mockUser = { id: 1, email: 'test@example.com', name: 'Test' };
+    (userApi.createUser as jest.Mock).mockResolvedValue(mockUser);
+    
+    // Act
+    const { result } = renderHook(() => useUser());
+    
+    await act(async () => {
+      await result.current.create({ email: 'test@example.com', name: 'Test' });
+    });
+    
+    // Assert
+    await waitFor(() => {
+      expect(result.current.data).toEqual(mockUser);
+      expect(result.current.isLoading).toBe(false);
+      expect(result.current.error).toBeNull();
+    });
+  });
+
+  it('sets error state on API failure', async () => {
+    // Arrange
+    (userApi.createUser as jest.Mock).mockRejectedValue(new Error('Network error'));
+    
+    // Act
+    const { result } = renderHook(() => useUser());
+    
+    await act(async () => {
+      await result.current.create({ email: 'test@example.com', name: 'Test' });
+    });
+    
+    // Assert
+    await waitFor(() => {
+      expect(result.current.error).toBe('Network error');
+      expect(result.current.data).toBeNull();
+    });
+  });
+});
+```
+
+### Test Quality Checklist
+- [ ] Each test tests ONE thing
+- [ ] Test names describe scenario and expected outcome
+- [ ] No copy-paste test code (use fixtures/factories)
+- [ ] No business logic reimplemented in tests
+- [ ] Assertions check outcomes, not implementation details
+- [ ] Unit tests are fast
+
+### What to Test
+
+| Layer | What to Test | What NOT to Test |
+|-------|--------------|------------------|
+| **Service** | Business logic, edge cases, error handling | Framework behavior |
+| **Databridge** | Query mapping, error translation | Database engine |
+| **Hook** | State transitions, loading/error states | React internals |
+| **Component** | Rendering, user interactions | CSS styling |
+
+---
+
+## Development Workflow
+
+### Before Writing Code
+1. **Search** the codebase for similar patterns
+2. **Draft interfaces** (data contracts) first
+3. **Implement** minimal logic — simplest solution
+4. **Validate** — try to break your own code
+5. **Test** — write tests and run them
+
+### Feature Development Flow
+
+```mermaid
+flowchart LR
+    A[Requirements] --> B{Clear?}
+    B -->|No| C[Ask Questions]
+    C --> A
+    B -->|Yes| D[Design/Blueprint]
+    D --> E{Approved?}
+    E -->|No| D
+    E -->|Yes| F[Implement]
+    F --> G[Test]
+    G --> H{Pass?}
+    H -->|No| F
+    H -->|Yes| I[Review]
+```
+
+### Build Order (Backend)
+1. **Database** — Stored procedures/migrations
+2. **Models** — Pydantic request/response models
+3. **Databridge** — Data access layer
+4. **Service** — Business logic
+5. **Router** — HTTP endpoints
+6. **Tests** — Unit and integration
+
+### Build Order (Frontend)
+1. **Models** — TypeScript interfaces
+2. **API** — HTTP client functions
+3. **Hooks** — State and logic
+4. **Components** — UI elements
+5. **Pages** — Route compositions
+6. **Tests** — Unit tests and stories (tests should be easy to write, or you just write bad code)
+
+---
+
+## Pre-Commit Checklist
+
+### Backend
+- [ ] All imports at top of file
+- [ ] Models use Pydantic BaseModel with type hints (NO DICTIONARIES)
+- [ ] Databridge only does data access (no business logic)
+- [ ] Service contains business logic only
+- [ ] Router has NO business logic
+- [ ] No raw SQL in application code
+- [ ] Tests written and passing
+- [ ] No hardcoded configuration values
+
+### Frontend
+- [ ] Import order: External → Internal → Relative → Styles
+- [ ] Named exports only (NO `export default`)
+- [ ] Interfaces use PascalCase
+- [ ] Hooks manage state and call APIs
+- [ ] Components are pure UI (no API calls, no business logic)
+- [ ] CSS Modules for styling (no inline styles)
+- [ ] Tests written and passing
+
+---
+
+## 💡 Common Mistakes to Avoid
+
+### 1. Business Logic in the Wrong Place
+```typescript
+// BAD: Logic in component
+function UserList() {
+  const [users, setUsers] = useState([]);
+  
+  // This belongs in a hook or service!
+  const activeUsers = users.filter(u => u.status === 'active' && u.lastLogin > Date.now() - 86400000);
+  
+  return <ul>{activeUsers.map(u => <li>{u.name}</li>)}</ul>;
+}
+
+// GOOD: Logic in hook
+function UserList() {
+  const { activeUsers } = useActiveUsers();
+  return <ul>{activeUsers.map(u => <li>{u.name}</li>)}</ul>;
+}
+```
+
+### 2. API Calls in Components
+```typescript
+// BAD: API call in component
+function UserProfile({ userId }) {
+  const [user, setUser] = useState(null);
+  
+  useEffect(() => {
+    fetch(`/api/users/${userId}`).then(r => r.json()).then(setUser);
+  }, [userId]);
+  
+  return <div>{user?.name}</div>;
+}
+
+// GOOD: API call in hook
+function UserProfile({ userId }) {
+  const { user, isLoading } = useUser(userId);
+  
+  if (isLoading) return <Spinner />;
+  return <div>{user?.name}</div>;
+}
+```
+
+### 3. Over-Engineering
+```python
+# BAD: Unnecessary abstraction
+class UserRepositoryInterface(ABC):
+    @abstractmethod
+    def get_user(self, id: int) -> User: ...
+
+class UserRepository(UserRepositoryInterface):
+    def get_user(self, id: int) -> User:
+        return self.db.query(User).get(id)
+
+# GOOD: Simple and direct (when you only have one implementation)
+class UserDatabridge:
+    def get_user(self, id: int) -> User:
+        return self.db.query(User).get(id)
+```
+
+### 4. Excessive Error Handling
+```python
+# ❌ BAD: Catching just to re-raise
+@router.post("/users")
+async def create_user(request: UserRequest):
+    try:
+        return await service.create_user(request)
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+# GOOD: handle all errors the same way
+@router.post("/users")
+@handle_error() 
+async def create_user(request: UserRequest):
+    return await service.create_user(request)
+```
+
+---
+
+## Further Reading
+
+- [Clean Code by Robert C. Martin](https://www.oreilly.com/library/view/clean-code-a/9780136083238/)
+- [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/)
+- [React Documentation](https://react.dev/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [Pydantic Documentation](https://docs.pydantic.dev/)
+
+---
+
+*Remember: Every line of code is code you have to maintain. Keep it simple.*
+

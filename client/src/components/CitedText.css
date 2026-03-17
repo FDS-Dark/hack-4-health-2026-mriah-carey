@@ -1,0 +1,289 @@
+.cited-text-container {
+  position: relative;
+  line-height: 1.7;
+}
+
+/* Markdown paragraphs */
+.markdown-paragraph {
+  margin: 0 0 1em 0;
+}
+
+.markdown-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Markdown headers */
+.markdown-h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: 0 0 0.8em 0;
+  color: #1a365d;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.3em;
+}
+
+.markdown-h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 1.2em 0 0.6em 0;
+  color: #2d3748;
+}
+
+.markdown-h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 1em 0 0.5em 0;
+  color: #4a5568;
+}
+
+.markdown-h4, .markdown-h5, .markdown-h6 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0.8em 0 0.4em 0;
+  color: #4a5568;
+}
+
+/* Markdown lists */
+.markdown-list {
+  margin: 0.5em 0 1em 0;
+  padding-left: 1.5em;
+}
+
+.markdown-list li {
+  margin-bottom: 0.4em;
+  line-height: 1.6;
+}
+
+/* Clickable citation link - green, styled like an academic citation */
+.cited-text-link {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #15803d;
+  font-size: 0.8em;
+  font-weight: 700;
+  vertical-align: super;
+  padding: 2px 5px;
+  margin: 0 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: system-ui, -apple-system, sans-serif;
+  text-decoration: none;
+}
+
+.cited-text-link:hover {
+  background-color: rgba(34, 197, 94, 0.4);
+  color: #166534;
+  transform: scale(1.05);
+}
+
+/* Legacy cited text styling (for highlighted sentences) */
+.cited-text {
+  background-color: rgba(34, 197, 94, 0.15);
+  border-bottom: 2px solid #22c55e;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.cited-text:hover {
+  background-color: rgba(34, 197, 94, 0.3);
+}
+
+/* Citation superscript */
+.citation-superscript {
+  font-size: 0.75em;
+  color: #16a34a;
+  font-weight: 700;
+  vertical-align: super;
+  margin-left: 2px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Bold text styling */
+.cited-text-container strong {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+/* Italic text styling */
+.cited-text-container em {
+  font-style: italic;
+}
+
+/* Legacy styles for popup (keeping for potential future use) */
+.citation-popup {
+  position: absolute;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 300px;
+  max-width: 500px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.citation-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f0fdf4;
+  border-radius: 8px 8px 0 0;
+}
+
+.citation-popup-header h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #166534;
+}
+
+.citation-popup-close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.citation-popup-close:hover {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.citation-popup-content {
+  padding: 12px 16px;
+}
+
+.citation-popup-item {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.citation-popup-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.citation-popup-title {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.citation-popup-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 6px;
+  word-break: break-all;
+}
+
+.citation-popup-link:hover {
+  text-decoration: underline;
+}
+
+.citation-popup-summary {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* Yellow highlighted medical terms (glossary) */
+.medical-term {
+  background-color: rgba(250, 204, 21, 0.4);
+  border-bottom: 2px solid #f59e0b;
+  padding: 1px 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.medical-term:hover {
+  background-color: rgba(250, 204, 21, 0.6);
+}
+
+/* Glossary term popup */
+.term-popup {
+  position: absolute;
+  background: white;
+  border: 2px solid #f59e0b;
+  border-radius: 8px;
+  padding: 0;
+  z-index: 1000;
+  min-width: 280px;
+  max-width: 350px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.term-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #fde68a;
+  background-color: #fef9c3;
+  border-radius: 6px 6px 0 0;
+}
+
+.term-popup-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #92400e;
+}
+
+.term-popup-category {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  background-color: #fde68a;
+  color: #78350f;
+}
+
+.term-popup-definition {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.term-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #9ca3af;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.term-popup-close:hover {
+  background-color: #f3f4f6;
+  color: #374151;
+}

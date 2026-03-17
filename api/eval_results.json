@@ -1,0 +1,286 @@
+{
+  "run_id": "",
+  "dataset_name": "merged_plain_language",
+  "model_version": "reference",
+  "sample_count": 10,
+  "readability_mean": {
+    "fkgl": 17.22,
+    "smog": 18.21,
+    "avg_sentence_length": 27.38,
+    "jargon_density": 0.0,
+    "total_tokens": 1321,
+    "cui_count": 0
+  },
+  "semantic_mean": null,
+  "concept_mean": null,
+  "nli_distribution": null,
+  "coverage_mean": {
+    "reference_cui_recall": 1.0,
+    "key_measurements_present": 0.5,
+    "total_reference_cuis": 278,
+    "covered_reference_cuis": 278,
+    "total_measurements": 25,
+    "preserved_measurements": 0
+  },
+  "ops": {
+    "latency_p50_ms": 0.0,
+    "latency_p95_ms": 0.0,
+    "latency_mean_ms": 0.0,
+    "cost_per_report_tokens": 0.0,
+    "retry_rate": 0.0,
+    "refinement_rate": 0.0,
+    "first_pass_success_rate": 0.0
+  },
+  "samples": [
+    {
+      "sample_id": "83810",
+      "original_text": "Intrauterine devices (IUDs) are highly effective and are the most widely used reversible contraceptive method in the world. However, in developed countries IUDs are among the least common methods of c...",
+      "simplified_text": "Two studies on antenatal contraceptive counselling and one study on postnatal couple counselling, with provision of an information leaflet before being discharged from the maternity ward, also showed ...",
+      "reference_text": "Two studies on antenatal contraceptive counselling and one study on postnatal couple counselling, with provision of an information leaflet before being discharged from the maternity ward, also showed ...",
+      "readability": {
+        "fkgl": 20.41,
+        "smog": 20.27,
+        "avg_sentence_length": 36.0,
+        "jargon_density": 0.0,
+        "total_tokens": 36,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 0.0,
+        "total_reference_cuis": 10,
+        "covered_reference_cuis": 10,
+        "total_measurements": 1,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "14592",
+      "original_text": "Background Penetrating abdominal trauma occurs when the peritoneal cavity is breached. Routine laparotomy for penetrating abdominal injuries began in the 1800s, with antibiotics first being used in Wo...",
+      "simplified_text": "Should prophylactic antibiotics be used in patients with penetrating abdominal trauma? For over half a century antibiotics have been given to patients that have suffered from a penetrating injury to t...",
+      "reference_text": "Should prophylactic antibiotics be used in patients with penetrating abdominal trauma? For over half a century antibiotics have been given to patients that have suffered from a penetrating injury to t...",
+      "readability": {
+        "fkgl": 14.38,
+        "smog": 16.37,
+        "avg_sentence_length": 17.62,
+        "jargon_density": 0.0,
+        "total_tokens": 141,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 0.0,
+        "total_reference_cuis": 28,
+        "covered_reference_cuis": 28,
+        "total_measurements": 7,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "3278",
+      "original_text": "Bacteria have evolved various inducible genetic programs to face many types of stress that challenge their growth and survival. Competence is one such program. It enables genetic transformation, a maj...",
+      "simplified_text": "Development of competence for genetic transformation by cultures of pneumococcal cells has been considered till now as a classic example of quorum sensing, whereby a culture attaining a sufficient cel...",
+      "reference_text": "Development of competence for genetic transformation by cultures of pneumococcal cells has been considered till now as a classic example of quorum sensing, whereby a culture attaining a sufficient cel...",
+      "readability": {
+        "fkgl": 23.0,
+        "smog": 24.25,
+        "avg_sentence_length": 40.67,
+        "jargon_density": 0.0,
+        "total_tokens": 122,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 1.0,
+        "total_reference_cuis": 34,
+        "covered_reference_cuis": 34,
+        "total_measurements": 0,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "36048",
+      "original_text": "The concept that gut microbiome-expressed functions regulate ponderal growth has important implications for infant and child health, as well as animal health. Using an intergenerational pig model of d...",
+      "simplified_text": "Significance Employing an intergenerational model of diet restriction ( DR) that reduces weight gain, we identify differences in carbohydrate metabolic enzyme gene content of DR versus full-fed ( FF) ...",
+      "reference_text": "Significance Employing an intergenerational model of diet restriction ( DR) that reduces weight gain, we identify differences in carbohydrate metabolic enzyme gene content of DR versus full-fed ( FF) ...",
+      "readability": {
+        "fkgl": 25.39,
+        "smog": 25.25,
+        "avg_sentence_length": 42.67,
+        "jargon_density": 0.0,
+        "total_tokens": 128,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 1.0,
+        "total_reference_cuis": 29,
+        "covered_reference_cuis": 29,
+        "total_measurements": 0,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "32098",
+      "original_text": "Background Consensus statements recommend the addition of long-acting inhaled ss2-agonists (LABA) only in asthmatic patients who are inadequately controlled on inhaled corticosteroids (ICS). It is not...",
+      "simplified_text": "The effect of adding a long-acting beta-agonist to inhaled steroids in people not previously treated with inhaled steroids In patients with asthma who require daily anti-inflammatory therapy, there is...",
+      "reference_text": "The effect of adding a long-acting beta-agonist to inhaled steroids in people not previously treated with inhaled steroids In patients with asthma who require daily anti-inflammatory therapy, there is...",
+      "readability": {
+        "fkgl": 20.08,
+        "smog": 20.15,
+        "avg_sentence_length": 34.75,
+        "jargon_density": 0.0,
+        "total_tokens": 278,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 0.0,
+        "total_reference_cuis": 48,
+        "covered_reference_cuis": 48,
+        "total_measurements": 5,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "29256",
+      "original_text": "Neural correlations during a cognitive task are central to study brain information processing and computation. However, they have been poorly analyzed due to the difficulty of recording simultaneous s...",
+      "simplified_text": "Significance How do multiple neurons communicate to solve a cognitive task? To answer this question, we investigate spike-train directional correlations across five primate cortical areas simultaneous...",
+      "reference_text": "Significance How do multiple neurons communicate to solve a cognitive task? To answer this question, we investigate spike-train directional correlations across five primate cortical areas simultaneous...",
+      "readability": {
+        "fkgl": 19.01,
+        "smog": 19.54,
+        "avg_sentence_length": 24.5,
+        "jargon_density": 0.0,
+        "total_tokens": 98,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 1.0,
+        "total_reference_cuis": 20,
+        "covered_reference_cuis": 20,
+        "total_measurements": 0,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "18289",
+      "original_text": "Background Restricting sodium intake in hypertensive patients over short periods of time reduces blood pressure. Long term effects (on mortality, morbidity or blood pressure) of advice to reduce salt ...",
+      "simplified_text": "The long term effects of advice to cut down on salt in food on deaths, cardiovascular disease and blood pressure in adults Intensive support and encouragement to reduce salt intake did lead to reducti...",
+      "reference_text": "The long term effects of advice to cut down on salt in food on deaths, cardiovascular disease and blood pressure in adults Intensive support and encouragement to reduce salt intake did lead to reducti...",
+      "readability": {
+        "fkgl": 11.68,
+        "smog": 13.38,
+        "avg_sentence_length": 20.22,
+        "jargon_density": 0.0,
+        "total_tokens": 182,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 0.0,
+        "total_reference_cuis": 42,
+        "covered_reference_cuis": 42,
+        "total_measurements": 11,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "13434",
+      "original_text": "Type 1A topoisomerases (topos) are the only ubiquitous topos. E. coli has two type 1A topos, topo I (topA) and topo III (topB) . Topo I relaxes negative supercoiling in part to inhibit R-loop formatio...",
+      "simplified_text": "DNA topoisomerases are nicking closing enzymes with strand passage activity that solves the topological problems inherent to the double-helical structure of DNA. Topos of the type 1A family are the on...",
+      "reference_text": "DNA topoisomerases are nicking closing enzymes with strand passage activity that solves the topological problems inherent to the double-helical structure of DNA. Topos of the type 1A family are the on...",
+      "readability": {
+        "fkgl": 12.74,
+        "smog": 13.97,
+        "avg_sentence_length": 20.1,
+        "jargon_density": 0.0,
+        "total_tokens": 201,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 0.0,
+        "total_reference_cuis": 41,
+        "covered_reference_cuis": 41,
+        "total_measurements": 1,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "71482",
+      "original_text": "Clinical scoring systems have been developed to predict the risk of S. pyogenes infection.",
+      "simplified_text": "Medical scoring systems have been created to predict risk of S. pyogenes bacterial infection.",
+      "reference_text": "Medical scoring systems have been created to predict risk of S. pyogenes bacterial infection....",
+      "readability": {
+        "fkgl": 9.05,
+        "smog": 11.21,
+        "avg_sentence_length": 7.0,
+        "jargon_density": 0.0,
+        "total_tokens": 14,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 1.0,
+        "total_reference_cuis": 4,
+        "covered_reference_cuis": 4,
+        "total_measurements": 0,
+        "preserved_measurements": 0
+      }
+    },
+    {
+      "sample_id": "11395",
+      "original_text": "During foraging, animals decide how long to stay at a patch and harvest reward, and then, they move with certain vigor to another location. How does the brain decide when to leave, and how does it det...",
+      "simplified_text": "Significance How long should one stay and accumulate reward, and then, how fast should one travel to the next reward site? Marginal value theorem describes the decision-making process: the brain compa...",
+      "reference_text": "Significance How long should one stay and accumulate reward, and then, how fast should one travel to the next reward site? Marginal value theorem describes the decision-making process: the brain compa...",
+      "readability": {
+        "fkgl": 16.49,
+        "smog": 17.69,
+        "avg_sentence_length": 30.25,
+        "jargon_density": 0.0,
+        "total_tokens": 121,
+        "cui_count": 0
+      },
+      "semantic": null,
+      "concept": null,
+      "nli": null,
+      "coverage": {
+        "reference_cui_recall": 1.0,
+        "key_measurements_present": 1.0,
+        "total_reference_cuis": 22,
+        "covered_reference_cuis": 22,
+        "total_measurements": 0,
+        "preserved_measurements": 0
+      }
+    }
+  ]
+}

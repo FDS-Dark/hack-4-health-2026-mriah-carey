@@ -1,0 +1,3 @@
+# **Declaration of AI Use**
+
+If you are reading this from within the Data Science Practicum course, I would like to truly apologize for the code you are about to see. This was done within a 3 day hackathon, and a majority, if not all, of the code is Cursor generated. Good news for you, though, is that Claude Opus 4.5 was the creator. Shit, this might be AGI and we wouldn't even know. Good luck to you.

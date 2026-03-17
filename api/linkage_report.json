@@ -1,0 +1,2588 @@
+{
+  "coverage_score": 0.5571,
+  "hallucination_rate": 0.4337,
+  "total_source_props": 70,
+  "total_summary_props": 83,
+  "matched_source_props": 39,
+  "unmatched_source_props": 31,
+  "unsupported_summary_props": 36,
+  "assertion_mismatches": [
+    {
+      "summary_fact_id": "sum_24",
+      "summary_text": "Your spinal cord ... looks normal in size",
+      "source_fact_id": "src_18",
+      "source_text": "Spinal cord is normal in caliber.",
+      "source_assertion": "absent",
+      "summary_assertion": "present"
+    }
+  ],
+  "alignments": [
+    {
+      "summary_fact": "JOHN SMITH",
+      "summary_id": "sum_1",
+      "source_ids": [
+        "src_2"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.6667
+    },
+    {
+      "summary_fact": "5/5/1955",
+      "summary_id": "sum_2",
+      "source_ids": [
+        "src_3"
+      ],
+      "match_type": "partial",
+      "confidence": 0.5
+    },
+    {
+      "summary_fact": "MRI of the Neck (Cervical Spine)",
+      "summary_id": "sum_3",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "summary_fact": "1/1/2011",
+      "summary_id": "sum_4",
+      "source_ids": [
+        "src_7"
+      ],
+      "match_type": "partial",
+      "confidence": 0.5
+    },
+    {
+      "summary_fact": "left neck",
+      "summary_id": "sum_5",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "pain in your left neck",
+      "summary_id": "sum_6",
+      "source_ids": [
+        "src_8"
+      ],
+      "match_type": "partial",
+      "confidence": 0.375
+    },
+    {
+      "summary_fact": "left shoulder",
+      "summary_id": "sum_7",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "pain in your left shoulder",
+      "summary_id": "sum_8",
+      "source_ids": [
+        "src_8"
+      ],
+      "match_type": "partial",
+      "confidence": 0.375
+    },
+    {
+      "summary_fact": "for the past two months",
+      "summary_id": "sum_9",
+      "source_ids": [
+        "src_8"
+      ],
+      "match_type": "partial",
+      "confidence": 0.3333
+    },
+    {
+      "summary_fact": "An MRI scan was taken of your neck",
+      "summary_id": "sum_10",
+      "source_ids": [
+        "src_11",
+        "src_6"
+      ],
+      "match_type": "exact",
+      "confidence": 1.0
+    },
+    {
+      "summary_fact": "using different views and techniques to get clear pictures",
+      "summary_id": "sum_11",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "your neck",
+      "summary_id": "sum_12",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "The natural curve in your neck looks a bit straighter than usual.",
+      "summary_id": "sum_13",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "This might be due to how you were positioned during the scan",
+      "summary_id": "sum_14",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "muscle spasms",
+      "summary_id": "sum_15",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "spinal discs",
+      "summary_id": "sum_16",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "levels C4-5 to C6-7",
+      "summary_id": "sum_17",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "The spaces between your spinal discs from levels C4-5 to C6-7 are moderately to severely narrowed.",
+      "summary_id": "sum_18",
+      "source_ids": [
+        "src_16",
+        "src_37",
+        "src_42"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.5455
+    },
+    {
+      "summary_fact": "the discs themselves are thinner than they should be",
+      "summary_id": "sum_19",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "signs of wear and tear",
+      "summary_id": "sum_20",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "bone spurs",
+      "summary_id": "sum_21",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "the front of your spine in these areas",
+      "summary_id": "sum_22",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "Your spinal cord",
+      "summary_id": "sum_23",
+      "source_ids": [
+        "src_18",
+        "src_19"
+      ],
+      "match_type": "partial",
+      "confidence": 0.5
+    },
+    {
+      "summary_fact": "Your spinal cord ... looks normal in size",
+      "summary_id": "sum_24",
+      "source_ids": [
+        "src_18",
+        "src_19"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.6
+    },
+    {
+      "summary_fact": "appears healthy on the MRI",
+      "summary_id": "sum_25",
+      "source_ids": [
+        "src_18"
+      ],
+      "match_type": "partial",
+      "confidence": 0.3333
+    },
+    {
+      "summary_fact": "cerebellar tonsils",
+      "summary_id": "sum_26",
+      "source_ids": [
+        "src_20"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "A part of your brain called the cerebellar tonsils is in its normal position.",
+      "summary_id": "sum_27",
+      "source_ids": [
+        "src_20"
+      ],
+      "match_type": "partial",
+      "confidence": 0.3333
+    },
+    {
+      "summary_fact": "harmful growths",
+      "summary_id": "sum_28",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "your bones",
+      "summary_id": "sum_29",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "damage to your bones",
+      "summary_id": "sum_30",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "bone marrow",
+      "summary_id": "sum_31",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "the joint on the left side of your spine at level C4-5",
+      "summary_id": "sum_32",
+      "source_ids": [
+        "src_33",
+        "src_66"
+      ],
+      "match_type": "partial",
+      "confidence": 0.3333
+    },
+    {
+      "summary_fact": "The bone marrow around the joint on the left side of your spine at level C4-5 shows a particular signal on the MRI.",
+      "summary_id": "sum_33",
+      "source_ids": [
+        "src_22"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4286
+    },
+    {
+      "summary_fact": "This likely indicates a reaction to arthritis in that joint.",
+      "summary_id": "sum_34",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "soft tissues next to your spine",
+      "summary_id": "sum_35",
+      "source_ids": [
+        "src_51"
+      ],
+      "match_type": "partial",
+      "confidence": 0.3333
+    },
+    {
+      "summary_fact": "No unusual growths or masses were seen in the soft tissues next to your spine.",
+      "summary_id": "sum_36",
+      "source_ids": [
+        "src_51"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4444
+    },
+    {
+      "summary_fact": "C2-3 (Upper Neck)",
+      "summary_id": "sum_37",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "The discs at this level are normal.",
+      "summary_id": "sum_38",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "nerve openings",
+      "summary_id": "sum_39",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "The nerve openings at this level are normal.",
+      "summary_id": "sum_40",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "spinal canal",
+      "summary_id": "sum_41",
+      "source_ids": [
+        "src_25",
+        "src_30",
+        "src_35"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "There is no narrowing of the spinal canal (C2-3).",
+      "summary_id": "sum_42",
+      "source_ids": [
+        "src_25",
+        "src_49",
+        "src_13"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4286
+    },
+    {
+      "summary_fact": "C3-4",
+      "summary_id": "sum_43",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "a small disc bulge (1-2 mm) in the center",
+      "summary_id": "sum_44",
+      "source_ids": [
+        "src_27"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4444
+    },
+    {
+      "summary_fact": "a joint on the right side",
+      "summary_id": "sum_45",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "mild overgrowth of a joint on the right side (C3-4)",
+      "summary_id": "sum_46",
+      "source_ids": [
+        "src_28",
+        "src_39"
+      ],
+      "match_type": "partial",
+      "confidence": 0.3333
+    },
+    {
+      "summary_fact": "the sac containing your spinal cord",
+      "summary_id": "sum_47",
+      "source_ids": [
+        "src_29",
+        "src_34",
+        "src_40"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "slightly presses on the front of the sac containing your spinal cord (C3-4)",
+      "summary_id": "sum_48",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "mild narrowing of the spinal canal (C3-4)",
+      "summary_id": "sum_49",
+      "source_ids": [
+        "src_30",
+        "src_35",
+        "src_41"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4286
+    },
+    {
+      "summary_fact": "The openings for the nerves (C3-4) are not significantly narrowed.",
+      "summary_id": "sum_50",
+      "source_ids": [
+        "src_31",
+        "src_26",
+        "src_50"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.7143
+    },
+    {
+      "summary_fact": "C4-5",
+      "summary_id": "sum_51",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "a noticeable disc bulge (C4-5)",
+      "summary_id": "sum_52",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "bone spurs, especially on the left side (C4-5)",
+      "summary_id": "sum_53",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "arthritis in the joint on the left side (C4-5)",
+      "summary_id": "sum_54",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "pressure on the front of the sac around your spinal cord (C4-5)",
+      "summary_id": "sum_55",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "mild narrowing of the spinal canal (C4-5)",
+      "summary_id": "sum_56",
+      "source_ids": [
+        "src_30",
+        "src_35",
+        "src_41"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4286
+    },
+    {
+      "summary_fact": "The openings for the nerves (C4-5) are moderately narrowed on the right",
+      "summary_id": "sum_57",
+      "source_ids": [
+        "src_36",
+        "src_64",
+        "src_42"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.7143
+    },
+    {
+      "summary_fact": "The openings for the nerves (C4-5) are moderately to severely narrowed on the left.",
+      "summary_id": "sum_58",
+      "source_ids": [
+        "src_37",
+        "src_65",
+        "src_42"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.7778
+    },
+    {
+      "summary_fact": "C5-6",
+      "summary_id": "sum_59",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "a noticeable disc bulge (C5-6)",
+      "summary_id": "sum_60",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "bone spurs, especially on the right side (C5-6)",
+      "summary_id": "sum_61",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "the joints on both sides",
+      "summary_id": "sum_62",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "mild overgrowth of the joints on both sides (C5-6)",
+      "summary_id": "sum_63",
+      "source_ids": [
+        "src_39"
+      ],
+      "match_type": "partial",
+      "confidence": 0.5
+    },
+    {
+      "summary_fact": "pressure on the front of the sac around your spinal cord (C5-6)",
+      "summary_id": "sum_64",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "mild narrowing of the spinal canal (C5-6)",
+      "summary_id": "sum_65",
+      "source_ids": [
+        "src_30",
+        "src_35",
+        "src_41"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4286
+    },
+    {
+      "summary_fact": "The openings for the nerves (C5-6) are moderately to severely narrowed on the right",
+      "summary_id": "sum_66",
+      "source_ids": [
+        "src_42",
+        "src_60",
+        "src_37"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.7778
+    },
+    {
+      "summary_fact": "The openings for the nerves (C5-6) are mildly narrowed on the left.",
+      "summary_id": "sum_67",
+      "source_ids": [
+        "src_43",
+        "src_61",
+        "src_37"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.7143
+    },
+    {
+      "summary_fact": "C6-7",
+      "summary_id": "sum_68",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "a noticeable disc bulge (C6-7)",
+      "summary_id": "sum_69",
+      "source_ids": [
+        "src_44"
+      ],
+      "match_type": "partial",
+      "confidence": 0.3
+    },
+    {
+      "summary_fact": "bone spurs (C6-7)",
+      "summary_id": "sum_70",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "pressure on the front of the sac around your spinal cord (C6-7)",
+      "summary_id": "sum_71",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "mild narrowing of the spinal canal (C6-7)",
+      "summary_id": "sum_72",
+      "source_ids": [
+        "src_30",
+        "src_35",
+        "src_41"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4286
+    },
+    {
+      "summary_fact": "The openings for the nerves (C6-7) are moderately to severely narrowed on both the right",
+      "summary_id": "sum_73",
+      "source_ids": [
+        "src_42",
+        "src_60",
+        "src_37"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.7778
+    },
+    {
+      "summary_fact": "The openings for the nerves (C6-7) are moderately to severely narrowed on the left sides.",
+      "summary_id": "sum_74",
+      "source_ids": [
+        "src_37",
+        "src_65",
+        "src_42"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.7778
+    },
+    {
+      "summary_fact": "C7-T1 (Lower Neck/Upper Back)",
+      "summary_id": "sum_75",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "The discs at this level (C7-T1) are normal.",
+      "summary_id": "sum_76",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "The nerve openings at this level (C7-T1) are normal.",
+      "summary_id": "sum_77",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "There is no narrowing of the spinal canal (C7-T1).",
+      "summary_id": "sum_78",
+      "source_ids": [
+        "src_49",
+        "src_25",
+        "src_50"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.6667
+    },
+    {
+      "summary_fact": "several levels of your neck spine",
+      "summary_id": "sum_79",
+      "source_ids": [
+        "src_6",
+        "src_11"
+      ],
+      "match_type": "semantic",
+      "confidence": 0.6667
+    },
+    {
+      "summary_fact": "signs of wear and tear (degenerative disease) at several levels of your neck spine",
+      "summary_id": "sum_80",
+      "source_ids": [
+        "src_6",
+        "src_52",
+        "src_11"
+      ],
+      "match_type": "partial",
+      "confidence": 0.4
+    },
+    {
+      "summary_fact": "small joints at several levels of your neck spine",
+      "summary_id": "sum_81",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    },
+    {
+      "summary_fact": "arthritis in the small joints at several levels of your neck spine",
+      "summary_id": "sum_82",
+      "source_ids": [
+        "src_6"
+      ],
+      "match_type": "partial",
+      "confidence": 0.3333
+    },
+    {
+      "summary_fact": "These changes are most significant between levels C4-5, C5-6, and C6-7.",
+      "summary_id": "sum_83",
+      "source_ids": [],
+      "match_type": "none",
+      "confidence": 0.0
+    }
+  ],
+  "source_propositions": [
+    {
+      "id": "src_1",
+      "text": "NationalRad Sample Neuroradiology Report",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "report type: neuroradiology report",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_2",
+      "text": "PATIENT: JOHN SMITH",
+      "category": "patient_info",
+      "assertion": "present",
+      "normalized": "patient name: john smith",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_3",
+      "text": "DOB: 5/5/1955",
+      "category": "patient_info",
+      "assertion": "present",
+      "normalized": "patient date of birth: 1955-05-05",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_4",
+      "text": "FILE #: 12345",
+      "category": "patient_info",
+      "assertion": "present",
+      "normalized": "patient file number: 12345",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_5",
+      "text": "PHYSICIAN: REFERRING",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "referring physician",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_6",
+      "text": "EXAM: MRI CERVICAL SPINE",
+      "category": "procedure",
+      "assertion": "present",
+      "normalized": "mri cervical spine",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_7",
+      "text": "DATE: 1/1/2011",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "exam date: 2011-01-01",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_8",
+      "text": "Left neck and shoulder pain for 2 months",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "left neck pain and shoulder pain, 2 months duration",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_9",
+      "text": "No comparison studies were performed.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no comparison study",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_10",
+      "text": "No contrast was given.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no contrast administered",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_11",
+      "text": "MRI of the cervical spine was obtained.",
+      "category": "procedure",
+      "assertion": "present",
+      "normalized": "cervical spine mri performed",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_12",
+      "text": "The following sequences were used: Axial GRE, sagittal T1, T2, and STIR.",
+      "category": "procedure",
+      "assertion": "present",
+      "normalized": "mri sequences: axial gre, sagittal t1, t2, stir",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_13",
+      "text": "There is straightening of the normal cervical lordosis.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "straightening of cervical lordosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_14",
+      "text": "The straightening of cervical lordosis may be positional.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "cervical lordosis straightening positional cause",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_15",
+      "text": "The straightening of cervical lordosis may be related to muscular spasm.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "cervical lordosis straightening muscular spasm cause",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_16",
+      "text": "There is moderate to severe disc space narrowing from C4-5 through C6-7.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "moderate to severe disc space narrowing c4-c5 to c6-c7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_17",
+      "text": "There is prominent prevertebral spondylosis.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "prominent prevertebral spondylosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_18",
+      "text": "Spinal cord is normal in caliber.",
+      "category": "finding",
+      "assertion": "absent",
+      "normalized": "normal spinal cord caliber",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_19",
+      "text": "Spinal cord is normal in signal intensity.",
+      "category": "finding",
+      "assertion": "absent",
+      "normalized": "normal spinal cord signal intensity",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_20",
+      "text": "Cerebellar tonsils are normally located.",
+      "category": "finding",
+      "assertion": "absent",
+      "normalized": "normal cerebellar tonsil location",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_21",
+      "text": "No destructive bony lesions.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no destructive bony lesion",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_22",
+      "text": "There is low T1 signal intensity within the bone marrow surrounding the left C4-5 facet joint.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "low t1 signal intensity in bone marrow surrounding left c4-c5 facet joint",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_23",
+      "text": "The low T1 signal intensity within the bone marrow may be reactive to facet arthropathy.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "low t1 signal intensity in bone marrow possibly reactive to facet arthropathy",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_24",
+      "text": "At C2-3, no disc osteophyte complex.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c2-c3 disc osteophyte complex",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_25",
+      "text": "At C2-3, no spinal canal stenosis.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c2-c3 spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_26",
+      "text": "At C2-3, no neural foraminal narrowing.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c2-c3 neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_27",
+      "text": "At C3-4, there is a focal 1-2 mm central disc protrusion.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c3-c4 focal central disc protrusion, 1-2 mm",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_28",
+      "text": "At C3-4, there is mild right uncovertebral joint hypertrophy.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c3-c4 mild right uncovertebral joint hypertrophy",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_29",
+      "text": "At C3-4, there is deformity of the ventral thecal sac.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c3-c4 ventral thecal sac deformity",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_30",
+      "text": "At C3-4, there is a mild spinal canal stenosis.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c3-c4 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_31",
+      "text": "At C3-4, no significant neural foraminal narrowing.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c3-c4 significant neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_32",
+      "text": "At C4-5, there is a diffuse disc osteophyte more prominent on the left.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 diffuse disc osteophyte, prominent on left",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_33",
+      "text": "At C4-5, there is left facet arthropathy.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 left facet arthropathy",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_34",
+      "text": "At C4-5, there is flattening of the ventral thecal sac.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_35",
+      "text": "At C4-5, there is a mild spinal canal stenosis.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_36",
+      "text": "At C4-5, there is moderate right neural foraminal narrowing.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 moderate right neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_37",
+      "text": "At C4-5, there is moderate to severe left neural foraminal narrowing.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 moderate to severe left neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_38",
+      "text": "At C5-6, there is a diffuse disc osteophyte more prominent on the right.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c5-c6 diffuse disc osteophyte, prominent on right",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_39",
+      "text": "At C5-6, there is mild bilateral facet joint hypertrophy.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c5-c6 mild bilateral facet joint hypertrophy",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_40",
+      "text": "At C5-6, there is flattening of the ventral thecal sac.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c5-c6 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_41",
+      "text": "At C5-6, there is a mild spinal canal stenosis.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c5-c6 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_42",
+      "text": "At C5-6, there is moderate to severe right neural foraminal narrowing.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c5-c6 moderate to severe right neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_43",
+      "text": "At C5-6, there is mild left neural foraminal narrowing.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c5-c6 mild left neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_44",
+      "text": "At C6-7, there is a diffuse disc osteophyte.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c6-c7 diffuse disc osteophyte",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_45",
+      "text": "At C6-7, there is flattening of the ventral thecal sac.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c6-c7 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_46",
+      "text": "At C6-7, there is a mild spinal canal stenosis.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c6-c7 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_47",
+      "text": "At C6-7, there is moderate to severe bilateral neural foraminal narrowing.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c6-c7 moderate to severe bilateral neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_48",
+      "text": "At C7-T1, no disc osteophyte complex.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c7-t1 disc osteophyte complex",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_49",
+      "text": "At C7-T1, no spinal canal stenosis.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c7-t1 spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_50",
+      "text": "At C7-T1, no neural foraminal narrowing.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c7-t1 neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_51",
+      "text": "No paraspinal soft tissue mass.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no paraspinal soft tissue mass",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_52",
+      "text": "There is multilevel degenerative disease.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "multilevel degenerative disease",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_53",
+      "text": "There is multilevel facet arthropathy.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "multilevel facet arthropathy",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_54",
+      "text": "The degenerative disease and facet arthropathy are most severe from C4-5 through C6-7.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "degenerative disease and facet arthropathy most severe c4-c5 to c6-c7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_55",
+      "text": "At C6-7, there is mild spinal canal stenosis.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c6-c7 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_56",
+      "text": "At C6-7, there is flattening of the ventral thecal sac.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c6-c7 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_57",
+      "text": "At C6-7, there is moderate to severe bilateral neural foraminal narrowing.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c6-c7 moderate to severe bilateral neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_58",
+      "text": "At C5-6, there is mild spinal canal stenosis.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c5-c6 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_59",
+      "text": "At C5-6, there is flattening of the ventral thecal sac.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c5-c6 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_60",
+      "text": "At C5-6, there is moderate to severe right neural foraminal narrowing.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c5-c6 moderate to severe right neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_61",
+      "text": "At C5-6, there is mild left neural foraminal narrowing.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c5-c6 mild left neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_62",
+      "text": "At C4-5, there is mild spinal canal stenosis.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c4-c5 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_63",
+      "text": "At C4-5, there is flattening of the ventral thecal sac.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c4-c5 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_64",
+      "text": "At C4-5, there is moderate right neural foraminal narrowing.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c4-c5 moderate right neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_65",
+      "text": "At C4-5, there is moderate to severe left neural foraminal narrowing.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c4-c5 moderate to severe left neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_66",
+      "text": "At C4-5, there is left facet arthropathy.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c4-c5 left facet arthropathy",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_67",
+      "text": "At C4-5, there is surrounding low T1 signal intensity within the bone marrow.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 low t1 signal intensity in surrounding bone marrow",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_68",
+      "text": "The low T1 signal intensity within the bone marrow at C4-5 is likely reactive.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "c4-c5 low t1 bone marrow signal intensity likely reactive",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_69",
+      "text": "The report was approved by a Board Certified Radiologist.",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "report approved by board certified radiologist",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_70",
+      "text": "This report was electronically signed.",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "report electronically signed",
+      "span_start": null,
+      "span_end": null
+    }
+  ],
+  "summary_propositions": [
+    {
+      "id": "sum_1",
+      "text": "JOHN SMITH",
+      "category": "patient_info",
+      "assertion": "present",
+      "normalized": "john smith",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_2",
+      "text": "5/5/1955",
+      "category": "patient_info",
+      "assertion": "present",
+      "normalized": "1955-05-05",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_3",
+      "text": "MRI of the Neck (Cervical Spine)",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "mri cervical spine",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_4",
+      "text": "1/1/2011",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "2011-01-01",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_5",
+      "text": "left neck",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "left neck",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_6",
+      "text": "pain in your left neck",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "left neck pain",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_7",
+      "text": "left shoulder",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "left shoulder",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_8",
+      "text": "pain in your left shoulder",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "left shoulder pain",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_9",
+      "text": "for the past two months",
+      "category": "measurement",
+      "assertion": "present",
+      "normalized": "pain duration two months",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_10",
+      "text": "An MRI scan was taken of your neck",
+      "category": "procedure",
+      "assertion": "present",
+      "normalized": "mri cervical spine performed",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_11",
+      "text": "using different views and techniques to get clear pictures",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "mri scan views and techniques used",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_12",
+      "text": "your neck",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "neck",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_13",
+      "text": "The natural curve in your neck looks a bit straighter than usual.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "cervical spine straightened curve",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_14",
+      "text": "This might be due to how you were positioned during the scan",
+      "category": "finding",
+      "assertion": "possible",
+      "normalized": "positioning artifact",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_15",
+      "text": "muscle spasms",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "muscle spasm",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_16",
+      "text": "spinal discs",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "intervertebral discs",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_17",
+      "text": "levels C4-5 to C6-7",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical spine levels C4-5 to C6-7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_18",
+      "text": "The spaces between your spinal discs from levels C4-5 to C6-7 are moderately to severely narrowed.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "intervertebral disc space narrowing C4-5 to C6-7, moderate to severe",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_19",
+      "text": "the discs themselves are thinner than they should be",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "disc thinning C4-5 to C6-7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_20",
+      "text": "signs of wear and tear",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "degenerative changes",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_21",
+      "text": "bone spurs",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "osteophytes",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_22",
+      "text": "the front of your spine in these areas",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "anterior cervical spine C4-5 to C6-7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_23",
+      "text": "Your spinal cord",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "spinal cord",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_24",
+      "text": "Your spinal cord ... looks normal in size",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "spinal cord normal size",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_25",
+      "text": "appears healthy on the MRI",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "spinal cord healthy appearance",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_26",
+      "text": "cerebellar tonsils",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cerebellar tonsils",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_27",
+      "text": "A part of your brain called the cerebellar tonsils is in its normal position.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "cerebellar tonsils normal position",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_28",
+      "text": "harmful growths",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no harmful growths",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_29",
+      "text": "your bones",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "bones",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_30",
+      "text": "damage to your bones",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no bone damage",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_31",
+      "text": "bone marrow",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "bone marrow",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_32",
+      "text": "the joint on the left side of your spine at level C4-5",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "left C4-5 facet joint",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_33",
+      "text": "The bone marrow around the joint on the left side of your spine at level C4-5 shows a particular signal on the MRI.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "bone marrow signal abnormality C4-5 left facet joint",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_34",
+      "text": "This likely indicates a reaction to arthritis in that joint.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "arthritis reaction C4-5 left facet joint",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_35",
+      "text": "soft tissues next to your spine",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "paraspinal soft tissues",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_36",
+      "text": "No unusual growths or masses were seen in the soft tissues next to your spine.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no unusual paraspinal soft tissue growths or masses",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_37",
+      "text": "C2-3 (Upper Neck)",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical spine level C2-3",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_38",
+      "text": "The discs at this level are normal.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "intervertebral discs C2-3 normal",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_39",
+      "text": "nerve openings",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "neural foramina",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_40",
+      "text": "The nerve openings at this level are normal.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "neural foramina C2-3 normal",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_41",
+      "text": "spinal canal",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "spinal canal",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_42",
+      "text": "There is no narrowing of the spinal canal (C2-3).",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no spinal canal narrowing C2-3",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_43",
+      "text": "C3-4",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical spine level C3-4",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_44",
+      "text": "a small disc bulge (1-2 mm) in the center",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "central disc bulge C3-4, 1-2 mm",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_45",
+      "text": "a joint on the right side",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "right facet joint C3-4",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_46",
+      "text": "mild overgrowth of a joint on the right side (C3-4)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "right facet joint overgrowth C3-4, mild",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_47",
+      "text": "the sac containing your spinal cord",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "thecal sac",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_48",
+      "text": "slightly presses on the front of the sac containing your spinal cord (C3-4)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "anterior thecal sac impingement C3-4, mild",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_49",
+      "text": "mild narrowing of the spinal canal (C3-4)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "spinal canal narrowing C3-4, mild",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_50",
+      "text": "The openings for the nerves (C3-4) are not significantly narrowed.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no significant neural foraminal narrowing C3-4",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_51",
+      "text": "C4-5",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical spine level C4-5",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_52",
+      "text": "a noticeable disc bulge (C4-5)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "disc bulge C4-5, noticeable",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_53",
+      "text": "bone spurs, especially on the left side (C4-5)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "left-sided osteophytes C4-5",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_54",
+      "text": "arthritis in the joint on the left side (C4-5)",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "left facet joint arthritis C4-5",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_55",
+      "text": "pressure on the front of the sac around your spinal cord (C4-5)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "anterior thecal sac compression C4-5",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_56",
+      "text": "mild narrowing of the spinal canal (C4-5)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "spinal canal narrowing C4-5, mild",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_57",
+      "text": "The openings for the nerves (C4-5) are moderately narrowed on the right",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "right neural foraminal narrowing C4-5, moderate",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_58",
+      "text": "The openings for the nerves (C4-5) are moderately to severely narrowed on the left.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "left neural foraminal narrowing C4-5, moderate to severe",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_59",
+      "text": "C5-6",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical spine level C5-6",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_60",
+      "text": "a noticeable disc bulge (C5-6)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "disc bulge C5-6, noticeable",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_61",
+      "text": "bone spurs, especially on the right side (C5-6)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "right-sided osteophytes C5-6",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_62",
+      "text": "the joints on both sides",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "bilateral facet joints C5-6",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_63",
+      "text": "mild overgrowth of the joints on both sides (C5-6)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "bilateral facet joint overgrowth C5-6, mild",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_64",
+      "text": "pressure on the front of the sac around your spinal cord (C5-6)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "anterior thecal sac compression C5-6",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_65",
+      "text": "mild narrowing of the spinal canal (C5-6)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "spinal canal narrowing C5-6, mild",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_66",
+      "text": "The openings for the nerves (C5-6) are moderately to severely narrowed on the right",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "right neural foraminal narrowing C5-6, moderate to severe",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_67",
+      "text": "The openings for the nerves (C5-6) are mildly narrowed on the left.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "left neural foraminal narrowing C5-6, mild",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_68",
+      "text": "C6-7",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical spine level C6-7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_69",
+      "text": "a noticeable disc bulge (C6-7)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "disc bulge C6-7, noticeable",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_70",
+      "text": "bone spurs (C6-7)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "osteophytes C6-7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_71",
+      "text": "pressure on the front of the sac around your spinal cord (C6-7)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "anterior thecal sac compression C6-7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_72",
+      "text": "mild narrowing of the spinal canal (C6-7)",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "spinal canal narrowing C6-7, mild",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_73",
+      "text": "The openings for the nerves (C6-7) are moderately to severely narrowed on both the right",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "right neural foraminal narrowing C6-7, moderate to severe",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_74",
+      "text": "The openings for the nerves (C6-7) are moderately to severely narrowed on the left sides.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "left neural foraminal narrowing C6-7, moderate to severe",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_75",
+      "text": "C7-T1 (Lower Neck/Upper Back)",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical spine level C7-T1",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_76",
+      "text": "The discs at this level (C7-T1) are normal.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "intervertebral discs C7-T1 normal",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_77",
+      "text": "The nerve openings at this level (C7-T1) are normal.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "neural foramina C7-T1 normal",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_78",
+      "text": "There is no narrowing of the spinal canal (C7-T1).",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no spinal canal narrowing C7-T1",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_79",
+      "text": "several levels of your neck spine",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical spine",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_80",
+      "text": "signs of wear and tear (degenerative disease) at several levels of your neck spine",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "degenerative disease cervical spine",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_81",
+      "text": "small joints at several levels of your neck spine",
+      "category": "anatomy",
+      "assertion": "present",
+      "normalized": "cervical facet joints",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_82",
+      "text": "arthritis in the small joints at several levels of your neck spine",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "facet joint arthritis cervical spine",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "sum_83",
+      "text": "These changes are most significant between levels C4-5, C5-6, and C6-7.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "most significant degenerative changes C4-5, C5-6, C6-7",
+      "span_start": null,
+      "span_end": null
+    }
+  ],
+  "missing_facts": [
+    {
+      "id": "src_1",
+      "text": "NationalRad Sample Neuroradiology Report",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "report type: neuroradiology report",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_4",
+      "text": "FILE #: 12345",
+      "category": "patient_info",
+      "assertion": "present",
+      "normalized": "patient file number: 12345",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_5",
+      "text": "PHYSICIAN: REFERRING",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "referring physician",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_9",
+      "text": "No comparison studies were performed.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no comparison study",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_10",
+      "text": "No contrast was given.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no contrast administered",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_12",
+      "text": "The following sequences were used: Axial GRE, sagittal T1, T2, and STIR.",
+      "category": "procedure",
+      "assertion": "present",
+      "normalized": "mri sequences: axial gre, sagittal t1, t2, stir",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_14",
+      "text": "The straightening of cervical lordosis may be positional.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "cervical lordosis straightening positional cause",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_15",
+      "text": "The straightening of cervical lordosis may be related to muscular spasm.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "cervical lordosis straightening muscular spasm cause",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_17",
+      "text": "There is prominent prevertebral spondylosis.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "prominent prevertebral spondylosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_21",
+      "text": "No destructive bony lesions.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no destructive bony lesion",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_23",
+      "text": "The low T1 signal intensity within the bone marrow may be reactive to facet arthropathy.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "low t1 signal intensity in bone marrow possibly reactive to facet arthropathy",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_24",
+      "text": "At C2-3, no disc osteophyte complex.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c2-c3 disc osteophyte complex",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_32",
+      "text": "At C4-5, there is a diffuse disc osteophyte more prominent on the left.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 diffuse disc osteophyte, prominent on left",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_38",
+      "text": "At C5-6, there is a diffuse disc osteophyte more prominent on the right.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c5-c6 diffuse disc osteophyte, prominent on right",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_45",
+      "text": "At C6-7, there is flattening of the ventral thecal sac.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c6-c7 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_46",
+      "text": "At C6-7, there is a mild spinal canal stenosis.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c6-c7 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_47",
+      "text": "At C6-7, there is moderate to severe bilateral neural foraminal narrowing.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c6-c7 moderate to severe bilateral neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_48",
+      "text": "At C7-T1, no disc osteophyte complex.",
+      "category": "negation",
+      "assertion": "absent",
+      "normalized": "no c7-t1 disc osteophyte complex",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_53",
+      "text": "There is multilevel facet arthropathy.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "multilevel facet arthropathy",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_54",
+      "text": "The degenerative disease and facet arthropathy are most severe from C4-5 through C6-7.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "degenerative disease and facet arthropathy most severe c4-c5 to c6-c7",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_55",
+      "text": "At C6-7, there is mild spinal canal stenosis.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c6-c7 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_56",
+      "text": "At C6-7, there is flattening of the ventral thecal sac.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c6-c7 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_57",
+      "text": "At C6-7, there is moderate to severe bilateral neural foraminal narrowing.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c6-c7 moderate to severe bilateral neural foraminal narrowing",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_58",
+      "text": "At C5-6, there is mild spinal canal stenosis.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c5-c6 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_59",
+      "text": "At C5-6, there is flattening of the ventral thecal sac.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c5-c6 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_62",
+      "text": "At C4-5, there is mild spinal canal stenosis.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c4-c5 mild spinal canal stenosis",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_63",
+      "text": "At C4-5, there is flattening of the ventral thecal sac.",
+      "category": "condition",
+      "assertion": "present",
+      "normalized": "c4-c5 ventral thecal sac flattening",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_67",
+      "text": "At C4-5, there is surrounding low T1 signal intensity within the bone marrow.",
+      "category": "finding",
+      "assertion": "present",
+      "normalized": "c4-c5 low t1 signal intensity in surrounding bone marrow",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_68",
+      "text": "The low T1 signal intensity within the bone marrow at C4-5 is likely reactive.",
+      "category": "condition",
+      "assertion": "possible",
+      "normalized": "c4-c5 low t1 bone marrow signal intensity likely reactive",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_69",
+      "text": "The report was approved by a Board Certified Radiologist.",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "report approved by board certified radiologist",
+      "span_start": null,
+      "span_end": null
+    },
+    {
+      "id": "src_70",
+      "text": "This report was electronically signed.",
+      "category": "metadata",
+      "assertion": "present",
+      "normalized": "report electronically signed",
+      "span_start": null,
+      "span_end": null
+    }
+  ],
+  "potential_hallucinations": [
+    {
+      "id": "sum_5",
+      "text": "left neck",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_7",
+      "text": "left shoulder",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_11",
+      "text": "using different views and techniques to get clear pictures",
+      "category": "metadata"
+    },
+    {
+      "id": "sum_12",
+      "text": "your neck",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_14",
+      "text": "This might be due to how you were positioned during the scan",
+      "category": "finding"
+    },
+    {
+      "id": "sum_15",
+      "text": "muscle spasms",
+      "category": "condition"
+    },
+    {
+      "id": "sum_16",
+      "text": "spinal discs",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_17",
+      "text": "levels C4-5 to C6-7",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_19",
+      "text": "the discs themselves are thinner than they should be",
+      "category": "finding"
+    },
+    {
+      "id": "sum_20",
+      "text": "signs of wear and tear",
+      "category": "condition"
+    },
+    {
+      "id": "sum_21",
+      "text": "bone spurs",
+      "category": "finding"
+    },
+    {
+      "id": "sum_22",
+      "text": "the front of your spine in these areas",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_28",
+      "text": "harmful growths",
+      "category": "negation"
+    },
+    {
+      "id": "sum_29",
+      "text": "your bones",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_30",
+      "text": "damage to your bones",
+      "category": "negation"
+    },
+    {
+      "id": "sum_31",
+      "text": "bone marrow",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_34",
+      "text": "This likely indicates a reaction to arthritis in that joint.",
+      "category": "condition"
+    },
+    {
+      "id": "sum_38",
+      "text": "The discs at this level are normal.",
+      "category": "finding"
+    },
+    {
+      "id": "sum_39",
+      "text": "nerve openings",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_40",
+      "text": "The nerve openings at this level are normal.",
+      "category": "finding"
+    },
+    {
+      "id": "sum_45",
+      "text": "a joint on the right side",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_48",
+      "text": "slightly presses on the front of the sac containing your spinal cord (C3-4)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_52",
+      "text": "a noticeable disc bulge (C4-5)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_53",
+      "text": "bone spurs, especially on the left side (C4-5)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_54",
+      "text": "arthritis in the joint on the left side (C4-5)",
+      "category": "condition"
+    },
+    {
+      "id": "sum_55",
+      "text": "pressure on the front of the sac around your spinal cord (C4-5)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_60",
+      "text": "a noticeable disc bulge (C5-6)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_61",
+      "text": "bone spurs, especially on the right side (C5-6)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_62",
+      "text": "the joints on both sides",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_64",
+      "text": "pressure on the front of the sac around your spinal cord (C5-6)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_70",
+      "text": "bone spurs (C6-7)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_71",
+      "text": "pressure on the front of the sac around your spinal cord (C6-7)",
+      "category": "finding"
+    },
+    {
+      "id": "sum_76",
+      "text": "The discs at this level (C7-T1) are normal.",
+      "category": "finding"
+    },
+    {
+      "id": "sum_77",
+      "text": "The nerve openings at this level (C7-T1) are normal.",
+      "category": "finding"
+    },
+    {
+      "id": "sum_81",
+      "text": "small joints at several levels of your neck spine",
+      "category": "anatomy"
+    },
+    {
+      "id": "sum_83",
+      "text": "These changes are most significant between levels C4-5, C5-6, and C6-7.",
+      "category": "finding"
+    }
+  ]
+}

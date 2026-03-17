@@ -1,0 +1,186 @@
+{
+  "main_ideas": [
+    {
+      "main_idea": "Patient Demographics and Exam Details",
+      "details": [
+        {
+          "detail": "PATIENT: JOHN SMITH"
+        },
+        {
+          "detail": "DOB: 5/5/1955"
+        },
+        {
+          "detail": "EXAM: MRI CERVICAL SPINE"
+        },
+        {
+          "detail": "DATE: 1/1/2011"
+        }
+      ]
+    },
+    {
+      "main_idea": "Clinical Indication for MRI",
+      "details": [
+        {
+          "detail": "Left neck and shoulder pain for 2 months"
+        }
+      ]
+    },
+    {
+      "main_idea": "Overall Diagnosis: Multilevel Degenerative Disease and Facet Arthropathy",
+      "details": [
+        {
+          "detail": "Most severe from C4-5 through C6-7"
+        }
+      ]
+    },
+    {
+      "main_idea": "Cervical Alignment Abnormality",
+      "details": [
+        {
+          "detail": "Straightening of the normal cervical lordosis"
+        },
+        {
+          "detail": "May be positional or related to muscular spasm"
+        }
+      ]
+    },
+    {
+      "main_idea": "General Disc and Spondylosis Findings",
+      "details": [
+        {
+          "detail": "Moderate to severe disc space narrowing from C4-5 through C6-7"
+        },
+        {
+          "detail": "Prominent prevertebral spondylosis"
+        }
+      ]
+    },
+    {
+      "main_idea": "Spinal Cord and Cerebellar Tonsil Status",
+      "details": [
+        {
+          "detail": "Spinal cord is normal in caliber and signal intensity"
+        },
+        {
+          "detail": "Cerebellar tonsils are normally located"
+        }
+      ]
+    },
+    {
+      "main_idea": "Bone Marrow Findings",
+      "details": [
+        {
+          "detail": "No destructive bony lesions"
+        },
+        {
+          "detail": "Low T1 signal intensity within the bone marrow surrounding the left C4-5 facet joint"
+        },
+        {
+          "detail": "Likely reactive to facet arthropathy"
+        }
+      ]
+    },
+    {
+      "main_idea": "Findings at C3-4 Level",
+      "details": [
+        {
+          "detail": "Focal 1-2 mm central disc protrusion"
+        },
+        {
+          "detail": "Mild right uncovertebral joint hypertrophy"
+        },
+        {
+          "detail": "Deformity of the ventral thecal sac"
+        },
+        {
+          "detail": "Mild spinal canal stenosis"
+        },
+        {
+          "detail": "No significant neural foraminal narrowing"
+        }
+      ]
+    },
+    {
+      "main_idea": "Findings at C4-5 Level",
+      "details": [
+        {
+          "detail": "Diffuse disc osteophyte more prominent on the left"
+        },
+        {
+          "detail": "Left facet arthropathy"
+        },
+        {
+          "detail": "Flattening of the ventral thecal sac"
+        },
+        {
+          "detail": "Mild spinal canal stenosis"
+        },
+        {
+          "detail": "Moderate right neural foraminal narrowing"
+        },
+        {
+          "detail": "Moderate to severe left neural foraminal narrowing"
+        }
+      ]
+    },
+    {
+      "main_idea": "Findings at C5-6 Level",
+      "details": [
+        {
+          "detail": "Diffuse disc osteophyte more prominent on the right"
+        },
+        {
+          "detail": "Mild bilateral facet joint hypertrophy"
+        },
+        {
+          "detail": "Flattening of the ventral thecal sac"
+        },
+        {
+          "detail": "Mild spinal canal stenosis"
+        },
+        {
+          "detail": "Moderate to severe right neural foraminal narrowing"
+        },
+        {
+          "detail": "Mild left neural foraminal narrowing"
+        }
+      ]
+    },
+    {
+      "main_idea": "Findings at C6-7 Level",
+      "details": [
+        {
+          "detail": "Diffuse disc osteophyte"
+        },
+        {
+          "detail": "Flattening of the ventral thecal sac"
+        },
+        {
+          "detail": "Mild spinal canal stenosis"
+        },
+        {
+          "detail": "Moderate to severe bilateral neural foraminal narrowing"
+        }
+      ]
+    },
+    {
+      "main_idea": "Absence of Significant Findings at C2-3 and C7-T1",
+      "details": [
+        {
+          "detail": "C2-3: No disc osteophyte complex, spinal canal stenosis, or neural foraminal narrowing"
+        },
+        {
+          "detail": "C7-T1: No disc osteophyte complex, spinal canal stenosis, or neural foraminal narrowing"
+        }
+      ]
+    },
+    {
+      "main_idea": "Absence of Paraspinal Soft Tissue Mass",
+      "details": [
+        {
+          "detail": "No paraspinal soft tissue mass"
+        }
+      ]
+    }
+  ]
+}

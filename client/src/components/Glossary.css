@@ -1,0 +1,200 @@
+.glossary-container {
+  width: 90%;
+  margin: 3rem auto 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.glossary-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.glossary-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.glossary-empty {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+.glossary-search-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.glossary-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #666;
+  pointer-events: none;
+}
+
+.glossary-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.glossary-search-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.glossary-stats {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.glossary-terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.glossary-terms-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.glossary-terms-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.glossary-terms-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.glossary-terms-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.glossary-term-card {
+  padding: 1.25rem;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.glossary-term-card:hover {
+  background-color: #f5f5f5;
+  border-color: #646cff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.glossary-term-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  gap: 1rem;
+}
+
+.glossary-term-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.glossary-term-category {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.category-diagnosis {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.category-test {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.category-treatment {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.category-anatomy {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.category-other {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.glossary-term-definition {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.glossary-no-results {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+}
+
+.glossary-no-results p {
+  margin: 0.5rem 0;
+}
+
+.glossary-hint {
+  font-size: 0.9rem;
+  color: #999;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .glossary-container {
+    width: 100%;
+    padding: 1.5rem;
+    margin: 2rem auto 1rem;
+  }
+
+  .glossary-term-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .glossary-term-category {
+    align-self: flex-start;
+  }
+}
